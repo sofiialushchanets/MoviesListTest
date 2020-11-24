@@ -13,6 +13,9 @@
 		57D1CFBC256D61AD00E5D320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D1CFBA256D61AD00E5D320 /* Main.storyboard */; };
 		57D1CFBE256D61AE00E5D320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1CFBD256D61AE00E5D320 /* Assets.xcassets */; };
 		57D1CFC1256D61AE00E5D320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D1CFBF256D61AE00E5D320 /* LaunchScreen.storyboard */; };
+		57D1CFDB256D634800E5D320 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1CFDA256D634800E5D320 /* UITableView+Dequeue.swift */; };
+		57D1CFE0256D638F00E5D320 /* UITableViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1CFDF256D638F00E5D320 /* UITableViewCell+Reusable.swift */; };
+		57D1CFE3256D63AB00E5D320 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1CFE2256D63AB00E5D320 /* Typealias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		57D1CFBD256D61AE00E5D320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D1CFC0256D61AE00E5D320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D1CFC2256D61AE00E5D320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D1CFDA256D634800E5D320 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		57D1CFDF256D638F00E5D320 /* UITableViewCell+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusable.swift"; sourceTree = "<group>"; };
+		57D1CFE2256D63AB00E5D320 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		E45962D7A0BA5F0F5A6B0098 /* Pods-MoviesListTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesListTest.release.xcconfig"; path = "Target Support Files/Pods-MoviesListTest/Pods-MoviesListTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +75,7 @@
 		57D1CFB3256D61AD00E5D320 /* MoviesListTest */ = {
 			isa = PBXGroup;
 			children = (
-				57D1CFD2256D629000E5D320 /* Utils */,
+				57D1CFD2256D629000E5D320 /* Utility */,
 				57D1CFD1256D628000E5D320 /* Storyboards */,
 				57D1CFCF256D626A00E5D320 /* Resources */,
 				57D1CFC2256D61AE00E5D320 /* Info.plist */,
@@ -94,13 +100,26 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		57D1CFD2256D629000E5D320 /* Utils */ = {
+		57D1CFD2256D629000E5D320 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				57D1CFD9256D632700E5D320 /* Extensions */,
 				57D1CFB4256D61AD00E5D320 /* AppDelegate.swift */,
 				57D1CFB6256D61AD00E5D320 /* SceneDelegate.swift */,
+				57D1CFE2256D63AB00E5D320 /* Typealias.swift */,
 			);
-			path = Utils;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		57D1CFD9256D632700E5D320 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57D1CFDA256D634800E5D320 /* UITableView+Dequeue.swift */,
+				57D1CFDF256D638F00E5D320 /* UITableViewCell+Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 			sourceTree = "<group>";
 		};
 		5C2A1867E09B24CE2E0B1A4D /* Pods */ = {
@@ -226,8 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D1CFE0256D638F00E5D320 /* UITableViewCell+Reusable.swift in Sources */,
 				57D1CFB5256D61AD00E5D320 /* AppDelegate.swift in Sources */,
+				57D1CFDB256D634800E5D320 /* UITableView+Dequeue.swift in Sources */,
 				57D1CFB7256D61AD00E5D320 /* SceneDelegate.swift in Sources */,
+				57D1CFE3256D63AB00E5D320 /* Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
