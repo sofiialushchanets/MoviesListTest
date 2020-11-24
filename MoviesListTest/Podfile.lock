@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (5.1.0)
+  - ReactiveCocoa (10.3.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReactiveCocoa (~> 10.1)
+  - ReactiveSwift (~> 6.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ReactiveCocoa
+    - ReactiveSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
+  ReactiveSwift: 8d159904084e908856cde90b2e28823f3c7e485f
+
+PODFILE CHECKSUM: 3013fddbfdcd1e4a5b9a7bb0049d39c676cc77c5
+
+COCOAPODS: 1.8.4
